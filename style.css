@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(237, 236, 236);;
+}
+main {
+    width: 100%;
+}
+header {
+    position: relative;
+    height: 60vh;
+}
+header > div {
+    display: flex;
+    position: absolute; 
+    left: 27%;
+    bottom: 5%;
+    padding-top: 70px;
+    margin: 0;
+    justify-content: center;
+    align-items: end;
+}
+
+header img {
+    width: 210px;
+    box-shadow: 1px 1px 5px black;
+    animation: appears 0.6s
+}
+img + div::after {
+    position: absolute;
+    content: 'Yanis Badurov';
+    font-family: "Rubik Glitch";
+    color: rgb(255, 196, 0);
+    left: 30px;
+    bottom: 10px;
+    font-size: 1.3rem;
+    animation: appears 0.6s;
+}
+
+header .aboutMe {
+  position: relative;
+  max-width: 500px;
+  bottom: 60px;
+  background-color: rgb(237, 236, 236);
+  padding: 10px;
+  box-shadow: 1px 1px 5px black;
+  font-family: "Roboto";
+  animation: appears 0.3s;
+  line-height: 1.5;
+}
+@keyframes appears {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+        opacity: 1;
+    }
+}
+
+header .aboutMe p {
+    font-size: 1rem;
+    color: rgb(60, 60, 60);
+}
+header .aboutMe h1 {
+ font-family: "Rubik Microbe";
+ text-align: center;
+ margin: 0;
+}
+
+header::before {
+	position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #5e1761;
+    background: linear-gradient(58deg, #310000 0%,#780000 50%, #5e1761);
+    transform: skewY(-8deg);
+    transform-origin: top left;
+}
+.assets {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+.assets svg {
+    width: 50px;
+    border: none;
+    background: none;
+    outline: none;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.assets svg:hover,
+svg:focus {
+    cursor: pointer;
+    transform: translateY(-5px);
+    opacity: 0.7;
+}
+
+@media (max-width: 500px) {
+    header > div {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        top: 100%;
+    }
+    img + div::after {
+        position: absolute;
+        content: 'Yanis Badurov';
+        font-family: "Rubik Glitch";
+        color: rgb(255, 196, 0);
+        left: 30%;
+        bottom: 270px;
+        font-size: 1.3rem;
+        animation: appears 0.6s;
+    }
+    header .aboutMe {
+        box-shadow: none;
+        border: none
+    }
+
+    .assets {
+        justify-content: center;
+    }
+}
