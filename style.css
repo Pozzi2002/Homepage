@@ -235,8 +235,6 @@ footer {
 }
 .portraitGirl {
     display: block;
-    box-sizing: border-box;
-    object-fit: contain;
     height: 360px;
     margin: 20px 0px 20px 0px;
     box-shadow: 2px 2px 10px black;
@@ -323,7 +321,7 @@ footer {
   }
   .portraitGirl {
     max-width: 70%;
-    height: min-content;
+    height: auto;
 }
 
 
