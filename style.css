@@ -216,8 +216,11 @@ svg:focus {
     }
     .projectsSection {
      position: absolute;
-     padding-left: 0;
-     top: 120%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     top: 100%;
 }
     .projectsSection > h2 {
         text-align: center;
