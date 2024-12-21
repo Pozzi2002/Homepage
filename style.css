@@ -148,7 +148,6 @@ svg:focus {
   align-items: center;
   justify-content: space-between;
 }
-
 .projectNameDiv .svgs {
     padding-bottom: 10px;
 }
@@ -171,9 +170,19 @@ svg:focus {
     padding: 5px 0px 10px 20px;
     font-family: 'Roboto', 'Arial';
     letter-spacing: 1px;
-
+    margin-bottom: 10px;
 }
-
+.projectText {
+    margin-top: 0;
+    padding-left: 10px;
+    color: rgb(60, 60, 60);
+    font-family: 'Roboto', 'Arial';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(60, 60, 60);
+  
+}
 
 
 
@@ -186,7 +195,7 @@ svg:focus {
         left: 0;
         top: 100%;
     }
-    img + div::after {
+    .mePortrait + div::after {
         position: absolute;
         content: 'Yanis Badurov';
         font-family: "Rubik Glitch";
@@ -198,7 +207,8 @@ svg:focus {
     }
     header .aboutMe {
         box-shadow: none;
-        border: none
+        border: none;
+        padding-left: 30px;
     }
 
     .assets {
@@ -206,5 +216,10 @@ svg:focus {
     }
     .projectsSection {
      position: absolute;
+     padding-left: 0;
+     top: 120%;
 }
+    .projectsSection > h2 {
+        text-align: center;
+    }
 }
