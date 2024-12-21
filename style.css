@@ -129,7 +129,14 @@ svg:focus {
     width: 300px;
     min-height: 350px;
     box-shadow: 1px 1px 5px black;
+    will-change: transform, box-shadow;
+    transition: transform 1s, box-shadow 1s;
 }
+.projectContainer:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px black;
+}
+
 .projectContainer img {
     max-width: 300px;
 }
