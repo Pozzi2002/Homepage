@@ -321,8 +321,7 @@ footer {
   }
   .portraitGirl {
     max-width: 70%;
-    object-fit: contain;
-    height: min-content;
+    height: auto;
 }
 
 
