@@ -216,20 +216,21 @@ svg:focus {
     }
     .projectsSection {
      position: relative;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
      padding: 0;
      top: 40vh;
 }
+ .projectsContainer {
+    padding: 1px;
+ }
+
     .projectsSection > h2 {
         text-align: center;
+        padding-bottom: 20px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
     .projectsSection {
-        top: 50vh;
+        top: 60vh;
    }
 }
