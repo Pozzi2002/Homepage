@@ -193,7 +193,7 @@ svg:focus {
         flex-direction: column;
         align-items: center;
         left: 0;
-        top: 100%;
+        top: 60vh;
     }
     .mePortrait + div::after {
         position: absolute;
@@ -215,14 +215,21 @@ svg:focus {
         justify-content: center;
     }
     .projectsSection {
-     position: absolute;
+     position: relative;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     top: 100%;
+     padding: 0;
+     top: 40vh;
 }
     .projectsSection > h2 {
         text-align: center;
     }
+}
+
+@media (max-width: 400px) {
+    .projectsSection {
+        top: 50vh;
+   }
 }
