@@ -218,7 +218,8 @@ svg:focus {
     .projectsSection {
      position: relative;
      padding: 0;
-     top: 50vh;
+     /* top: 50vh; */
+     top: 70vh
 }
  .projectsContainer {
     padding: 1px;
@@ -232,6 +233,7 @@ svg:focus {
 
 @media (max-width: 380px) {
     .projectsSection {
-        top: 70vh;
+        /* top: 70vh; */
+        top: 90vh;
    }
 }
