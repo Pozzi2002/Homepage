@@ -189,11 +189,12 @@ svg:focus {
 @media (max-width: 500px) {
     /*Header for mobile*/
     header > div {
+        position: relative;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         left: 0;
-        top: 60vh;
+        top: 30vh;
     }
     .mePortrait + div::after {
         position: absolute;
@@ -217,7 +218,7 @@ svg:focus {
     .projectsSection {
      position: relative;
      padding: 0;
-     top: 40vh;
+     top: 50vh;
 }
  .projectsContainer {
     padding: 1px;
@@ -231,6 +232,6 @@ svg:focus {
 
 @media (max-width: 380px) {
     .projectsSection {
-        top: 60vh;
+        top: 70vh;
    }
 }
