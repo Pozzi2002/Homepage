@@ -321,7 +321,7 @@ footer {
   }
   .portraitGirl {
     max-width: 70%;
-    height: auto;
+    height: min-content;
 }
 
 
